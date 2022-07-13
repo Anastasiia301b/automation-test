@@ -1,0 +1,461 @@
+{
+  "id": "9b06504c-da80-4bb8-8030-b387d5730b0e",
+  "version": "2.0",
+  "name": "homework ",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "8c6998dd-0956-41d4-8cad-f0546fd2e8dc",
+    "name": "verifying description for items",
+    "commands": [{
+      "id": "ab942fe8-6f29-4dc3-bbc9-b097d91ca8e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b330684b-bce7-45ff-b2e1-a7a7e40b884d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2831f5a9-9db9-4184-943c-ae124e32791b",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e49f26-557c-4bad-8c73-eb6acf5bae39",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "139ca61f-a0be-4c4a-868c-a68f24d31498",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75976d2c-8d48-4678-823a-ddb3ac07b649",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "d3201671-d396-4a70-8c29-736166022daa",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddd6dad0-e2d5-4cc7-b3b8-49bd535b3cf1",
+      "comment": "click on first item",
+      "command": "click",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d1e8b4c-d723-4296-9aaa-69601eb309cf",
+      "comment": "verifying text description first item",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "dd6877ac-1e53-4a9c-9e6d-89047105cbbb",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "901ae00b-95d5-4e90-a27a-d8a7b60b2660",
+      "comment": "click on second item",
+      "command": "click",
+      "target": "css=#item_0_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_0_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_0_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b136e39e-f433-460a-ab83-5d71eef74154",
+      "comment": "verifyin description for second item",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "778ed768-db96-4b01-8682-6804be014bf1",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72174da0-3b75-4f72-957f-4662504fb3af",
+      "comment": "click on third item",
+      "command": "click",
+      "target": "css=#item_1_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_1_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_1_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4598021-9899-46d4-8c8d-8a786d9b2514",
+      "comment": "verifying text description third item",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "9b800b06-8e95-4a4b-a46a-92746a876dfc",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2025316-ce31-4b75-ba0c-44fb79900bf5",
+      "comment": "click on fourth item",
+      "command": "click",
+      "target": "css=#item_5_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_5_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_5_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7f833e-0d7b-42ba-9344-ba516e4d5cb2",
+      "comment": "verifying description forth item",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "06c23bcd-8702-4bcf-9877-3904874c3c60",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dbe8705-859f-4d51-9a92-073051fdea6d",
+      "comment": "click on fifth item",
+      "command": "click",
+      "target": "css=#item_2_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_2_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_2_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfe118b3-86dd-4a42-8e39-036f1a0ccfe7",
+      "comment": "verifying description fifth item",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "597460a8-e501-43af-84db-af7e450dca56",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b5ba0cd-7f51-4440-bf80-bbc83f4baa51",
+      "comment": "click on sixth item",
+      "command": "click",
+      "target": "css=#item_2_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_2_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_2_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "085dd327-cdbb-4d98-827a-993601989a97",
+      "comment": "back to main page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f5d892-9127-4981-a395-f97515f41965",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab420ea-f0da-43ae-891f-eaca582dcc03",
+      "comment": "login out",
+      "command": "click",
+      "target": "id=logout_sidebar_link",
+      "targets": [
+        ["id=logout_sidebar_link", "id"],
+        ["css=#logout_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@id='logout_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adaa1584-5098-4d50-b008-2ee7ef063961",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3b44e8cf-2639-4b5b-bc74-abd763a19fda",
+    "name": "login test",
+    "commands": [{
+      "id": "c7a461ed-6a71-4753-937a-581a0869b622",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff6c9908-9363-471d-9f10-e979147af8f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1272x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ead14ad5-9f39-4dc4-b789-744529dd6451",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e7ee934-a569-4080-bab3-7468fb41ec6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "d4a29085-67b8-41dd-a51f-6f64508ed95b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f686f422-3571-4b6b-93f5-8ebcccd48f13",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "396766a6-0126-4a46-bbb2-4a027da448be",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "652ca5c8-cb97-4a63-ab91-b91d78e5341e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_list",
+      "targets": [
+        ["css=.inventory_list", "css:finder"],
+        ["xpath=(//div[@id='inventory_container']/div)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }]
+  }],
+  "suites": [{
+    "id": "a66f2162-4858-4498-a6f9-eb09717e9b75",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8c6998dd-0956-41d4-8cad-f0546fd2e8dc"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
